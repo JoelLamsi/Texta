@@ -1,0 +1,49 @@
+﻿@page "/"
+@using Texta.Utils
+@using Texta.Shared
+
+<PageTitle>Home</PageTitle>
+
+<h1>Saavutettavuustesti</h1>
+
+<div class="grid" style="display: grid; grid-template-columns: 360px 1fr; gap: 20px; align-items: start;">
+    <div>
+        <label>Tekstin väri</label>
+        <ColorPicker Color="@TextColor" OnColorChanged="@(c => TextColor = c)" />
+
+        <label style="margin-top: 12px; display: block;">Taustaväri</label>
+        <ColorPicker Color="@BackgroundColor" OnColorChanged="@(c => BackgroundColor = c)" />
+
+        <label style="margin-top: 12px; display: block;">Fontin koko (px)</label>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <input type="range" min="10" max="48" @bind="FontSize" @bind:event="oninput" />
+            <span>@FontSize px</span>
+        </div>
+        
+        <label style="margin-top: 12px; display: block;">Teksti (esikatselu)</label>
+        <textarea rows="3" style="width: 100%;" @bind="PreviewText"></textarea>
+
+        <button style="margin-top: 12px;" @onclick="CopyExample">Täytä esimerkillä</button>
+    </div>
+
+    <div style="padding: 16px; border-radius: 8px; border: 1px solid #ccc;
+                  background-color: @BackgroundColor; color: @TextColor; 
+                  font-size: @($"{FontSize}px");">
+        <p style="margin: 0;">@PreviewText</p>
+    </div>
+    <div style="margin-top: 12px;">
+        <ContrastResult TextColor="@TextColor" BackgroundColor="@BackgroundColor" FontSize="@FontSize" />
+    </div>
+</div>
+
+@code {
+    private string TextColor { get; set; } = "#000000";
+    private string BackgroundColor { get; set; } = "#ffffff";
+    private int FontSize { get; set; } = 16;
+    private string PreviewText { get; set; } = "Tämä on esimerkkiteksti. Muuta väriä, taustaa ja fonttia nähdäksesi muutokset kontrastissa.";
+
+    private void CopyExample()
+    {
+        PreviewText = "Tämä on esimerkkiteksti. Muuta väriä, taustaa ja fonttia nähdäksesi muutokset kontrastissa.";
+    }
+}

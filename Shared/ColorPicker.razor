@@ -1,0 +1,25 @@
+<div style="display: flex; gap: 8px; align-items: center; margin-bottom: 8px;">
+    <input type="color" value="@Color" @oninput="OnInputColor" />
+    <input type="text" value="@Color" @oninput="OnInputText" style="width: 90px;" />
+</div>
+
+@code {
+    [Parameter] public string Color { get; set; } = "#000000";
+    [Parameter] public EventCallback<string> OnColorChanged { get; set; }
+
+    private async Task OnInputColor(ChangeEventArgs e)
+    {
+        Color = e?.Value?.ToString() ?? Color;
+        await OnColorChanged.InvokeAsync(Color);
+    }
+    
+    private async Task OnInputText(ChangeEventArgs e)
+    {
+        var val = e?.Value?.ToString() ?? Color;
+        if (!string.IsNullOrEmpty(val) && val.StartsWith("#") && (val.Length == 4 || val.Length == 7))
+        {
+            Color = val;
+            await OnColorChanged.InvokeAsync(Color);
+        }
+    }
+}

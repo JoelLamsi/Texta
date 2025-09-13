@@ -1029,3 +1029,6 @@ C:\Users\joell\source\repos\Texta\obj\Debug\net8.0\compressed\wuyk8fq9z1.gz
 C:\Users\joell\source\repos\Texta\obj\Debug\net8.0\compressed\3ctx1nszwe.gz
 C:\Users\joell\source\repos\Texta\obj\Debug\net8.0\compressed\bvzj4xhf8s.gz
 C:\Users\joell\source\repos\Texta\obj\Debug\net8.0\compressed\vt4y80kb6q.gz
+C:\Users\joell\source\repos\Texta\bin\Debug\net8.0\firebase.json
+C:\Users\joell\source\repos\Texta\obj\Debug\net8.0\Texta.sourcelink.json
+C:\Users\joell\source\repos\Texta\obj\Debug\net8.0\scopedcss\Pages\Home.razor.rz.scp.css

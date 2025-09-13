@@ -8,11 +8,11 @@
         var aaLarge = ContrastUtils.PassesAA(ratio ?? 0, isLargeText: true);
         var aaaNormal = ContrastUtils.PassesAAA(ratio ?? 0, isLargeText: false);
     }
-    <div><strong>Kontrastisuhde:</strong>@ratioStr : 1</div>
+    <div><strong>Kontrastisuhde: </strong>@ratioStr : 1</div>
     <div style="margin-top: 6px;">
-        <span>AA (normaali teksti, &lt; 18px): @(aaNormal ? "Läpäisee" : "Ei läpäise")</span><br />
-        <span>AA (iso teksti, &gt;= 18px): @(aaLarge ? "Läpäisee" : "Ei läpäise")</span><br />
-        <span>AAA (normaali): @(aaaNormal ? "Läpäisee" : "Ei läpäise")</span>
+        <span>AA (normaali teksti, &lt; 18px): </span><span style="font-weight: bold;">@(aaNormal ? "Läpäisee" : "Ei läpäise")</span><br />
+        <span>AA (iso teksti, &gt;= 18px): </span><span style="font-weight: bold;">@(aaLarge ? "Läpäisee" : "Ei läpäise")</span><br />
+        <span>AAA (normaali): </span><span style="font-weight: bold;">@(aaaNormal ? "Läpäisee" : "Ei läpäise")</span>
     </div>
     <div style="margin-top: 8px;">
         <small>WGAC-kynnykset: AA normaali &gt;= 4.5, AA iso &gt;= 3.0, AAA normaali &gt;= 7.0</small>

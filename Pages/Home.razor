@@ -2,36 +2,35 @@
 @using Texta.Utils
 @using Texta.Shared
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Saavutettavuustesti</PageTitle>
 
 <h1>Saavutettavuustesti</h1>
 
-<div class="grid" style="display: grid; grid-template-columns: 360px 1fr; gap: 20px; align-items: start;">
+<div class="grid"
     <div>
         <label>Tekstin väri</label>
         <ColorPicker Color="@TextColor" OnColorChanged="@(c => TextColor = c)" />
 
-        <label style="margin-top: 12px; display: block;">Taustaväri</label>
+        <label class="margin-top">Taustaväri</label>
         <ColorPicker Color="@BackgroundColor" OnColorChanged="@(c => BackgroundColor = c)" />
 
-        <label style="margin-top: 12px; display: block;">Fontin koko (px)</label>
-        <div style="display: flex; align-items: center; gap: 10px;">
+        <label class="margin-top">Fontin koko (px)</label>
+        <div class="font-size-container">
             <input type="range" min="10" max="48" @bind="FontSize" @bind:event="oninput" />
             <span>@FontSize px</span>
         </div>
         
-        <label style="margin-top: 12px; display: block;">Teksti (esikatselu)</label>
+        <label class="margin-top">Teksti (esikatselu)</label>
         <textarea rows="3" style="width: 100%;" @bind="PreviewText"></textarea>
 
-        <button style="margin-top: 12px;" @onclick="CopyExample">Täytä esimerkillä</button>
+        <button class="margin-top" @onclick="CopyExample">Täytä esimerkillä</button>
     </div>
 
-    <div style="padding: 16px; border-radius: 8px; border: 1px solid #ccc;
-                  background-color: @BackgroundColor; color: @TextColor; 
+    <div class="preview-box" style="background-color: @BackgroundColor; color: @TextColor; 
                   font-size: @($"{FontSize}px");">
-        <p style="margin: 0;">@PreviewText</p>
+        <p>@PreviewText</p>
     </div>
-    <div style="margin-top: 12px;">
+    <div class="margin-top">
         <ContrastResult TextColor="@TextColor" BackgroundColor="@BackgroundColor" FontSize="@FontSize" />
     </div>
 </div>

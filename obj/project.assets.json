@@ -1847,11 +1847,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joell\\source\\Texta\\Texta\\Texta.csproj",
+      "projectUniqueName": "C:\\Users\\joell\\source\\repos\\Texta\\Texta.csproj",
       "projectName": "Texta",
-      "projectPath": "C:\\Users\\joell\\source\\Texta\\Texta\\Texta.csproj",
+      "projectPath": "C:\\Users\\joell\\source\\repos\\Texta\\Texta.csproj",
       "packagesPath": "C:\\Users\\joell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joell\\source\\Texta\\Texta\\obj\\",
+      "outputPath": "C:\\Users\\joell\\source\\repos\\Texta\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joell\\AppData\\Roaming\\NuGet\\NuGet.Config",

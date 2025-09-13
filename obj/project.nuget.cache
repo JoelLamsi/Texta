@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zrYS0szrQxQ=",
+  "dgSpecHash": "G80rPbfRTdA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\joell\\source\\Texta\\Texta\\Texta.csproj",
+  "projectFilePath": "C:\\Users\\joell\\source\\repos\\Texta\\Texta.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joell\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.19\\microsoft.aspnetcore.authorization.8.0.19.nupkg.sha512",
     "C:\\Users\\joell\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.19\\microsoft.aspnetcore.components.8.0.19.nupkg.sha512",

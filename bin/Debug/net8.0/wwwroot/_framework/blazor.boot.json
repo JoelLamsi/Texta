@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Texta",
   "resources": {
-    "hash": "sha256-n9w5DuAdll0T5NpwRLUCTyQWjk8Ahu0pLhn8UMbRy+c=",
+    "hash": "sha256-LJnO6+VrO7ZkzGRxX1+rgZdP0skLCx/WnNiHbnLqsmU=",
     "jsModuleNative": {
       "dotnet.native.8.0.20.yp1ylrhqdv.js": "sha256-D0bzod5lwwSzPR43JC8TTCcZKw+3jIHOk8CZFCRj5is="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-RLW/7NVuhoPfq151II3kX2kWHgBwQgpCw9aemQNg3to=",
       "netstandard.wasm": "sha256-lAg5WvTiA8wbsIwlr51xh0YWpXT9F5EX3Cnv+11O/mU=",
       "System.Private.CoreLib.wasm": "sha256-3O3muuRQwoLRecYRjfIFWUURvTjP4EmD2O8wYg2UDNY=",
-      "Texta.wasm": "sha256-CaSpAeYXE6XCB9s7q3X3pAugnb7KZryO8YuDJ4SIpWE="
+      "Texta.wasm": "sha256-oTwJzoLCDuWEiKwRjjOA01puA74kYlB7/GVK2ksfM3E="
     },
     "pdb": {
-      "Texta.pdb": "sha256-K3H0rxGzjFR0nLvBf56Y4460k6aF08tcMICt95LnkWQ="
+      "Texta.pdb": "sha256-fHHghm1ZlnRKHQ6ZBFJagn1M8MyZevzoC/AP5olVuyA="
     }
   },
   "cacheBootResources": true,

@@ -1029,3 +1029,8 @@ C:\Users\joell\source\repos\Texta\obj\Release\net8.0\Texta.dll
 C:\Users\joell\source\repos\Texta\obj\Release\net8.0\refint\Texta.dll
 C:\Users\joell\source\repos\Texta\obj\Release\net8.0\Texta.pdb
 C:\Users\joell\source\repos\Texta\obj\Release\net8.0\ref\Texta.dll
+C:\Users\joell\source\repos\Texta\bin\Release\net8.0\firebase.json
+C:\Users\joell\source\repos\Texta\bin\Release\net8.0\functions\package-lock.json
+C:\Users\joell\source\repos\Texta\bin\Release\net8.0\functions\package.json
+C:\Users\joell\source\repos\Texta\obj\Release\net8.0\Texta.sourcelink.json
+C:\Users\joell\source\repos\Texta\obj\Release\net8.0\scopedcss\Pages\Home.razor.rz.scp.css

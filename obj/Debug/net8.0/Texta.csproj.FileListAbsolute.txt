@@ -1034,3 +1034,4 @@ C:\Users\joell\source\repos\Texta\obj\Debug\net8.0\Texta.sourcelink.json
 C:\Users\joell\source\repos\Texta\obj\Debug\net8.0\scopedcss\Pages\Home.razor.rz.scp.css
 C:\Users\joell\source\repos\Texta\bin\Debug\net8.0\functions\package-lock.json
 C:\Users\joell\source\repos\Texta\bin\Debug\net8.0\functions\package.json
+C:\Users\joell\source\repos\Texta\obj\Debug\net8.0\scopedcss\Pages\LanguageDetect.razor.rz.scp.css

@@ -5,21 +5,49 @@
 
 <h3>Kielen tunnistin</h3>
 
-<textarea @bind="InputText" rows="5" cols="50" placeholder="Kirjoita teksti..."></textarea>
-<br />
-<button @onclick="Detect">Tunnista kieli</button>
+<div class="input-container">
+    <textarea @bind="InputText" rows="5" cols="50" placeholder="Kirjoita teksti..."></textarea>
+    <br />
+    <button @onclick="DetectLanguage">Tunnista kieli</button>
+</div>
 
-@if (!string.IsNullOrEmpty(Result))
+@if (IsLoading)
 {
-    <p><strong>Tunnistettu kieli:</strong> @Result</p>
+    <p>Tunnistetaan...</p>
+} 
+else if (!string.IsNullOrEmpty(DetectedLanguage))
+{
+    <p><strong>Tunnistettu kieli:</strong> @DetectedLanguage</p>
 }
 
-@code {
-    private string InputText = "";
-    private string Result = "";
+<footer class="footer">
+    <p>
+        Powered by the <a href="https://detectlanguage.com" target="__blank" rel="noopener noreferrer">DetectLanguage API</a>.
+        DetectLanguage is a trademark of DetectLanguage.com.
+    </p>
+</footer>
 
-    private async Task Detect()
+@code {
+    private string InputText = string.Empty;
+    private string DetectedLanguage = string.Empty;
+    private bool IsLoading = false;
+
+    private async Task DetectLanguage()
     {
-        Result = await LanguageDetectionService.DetectLanguageAsync(InputText) ?? "Ei tunnistettu";
+        if (string.IsNullOrWhiteSpace(InputText)) return;
+
+        try
+        {
+            IsLoading = true;
+            DetectedLanguage = await LanguageDetectionService.DetectLanguageAsync(InputText) ?? "Ei tunnistettu";
+        }
+        catch (Exception ex)
+        {
+            DetectedLanguage = $"Virhe: {ex.Message}";
+        }
+        finally
+        {
+            IsLoading = false;
+        }
     }
 }

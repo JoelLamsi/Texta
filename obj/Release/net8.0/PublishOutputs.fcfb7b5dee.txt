@@ -1,1 +1,4 @@
+C:\Users\joell\source\repos\Texta\bin\Release\net8.0\publish\firebase.json
+C:\Users\joell\source\repos\Texta\bin\Release\net8.0\publish\functions\package-lock.json
+C:\Users\joell\source\repos\Texta\bin\Release\net8.0\publish\functions\package.json
 C:\Users\joell\source\repos\Texta\bin\Release\net8.0\publish\web.config

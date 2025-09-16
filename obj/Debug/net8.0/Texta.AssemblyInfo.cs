@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Texta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+622f055c85b4c8df971aa4bf7b09c22ad2a1bedc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+552abee7086f163ce9bddb9ff8c10a7de4134396")]
 [assembly: System.Reflection.AssemblyProductAttribute("Texta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Texta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

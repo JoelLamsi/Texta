@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\Texta.styles.css"
     },
     {
+      "Id": "C:\\Users\\joell\\source\\repos\\Texta\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "C:\\Users\\joell\\source\\repos\\Texta\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
       "Id": "C:\\Users\\joell\\source\\repos\\Texta\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

@@ -1,0 +1,25 @@
+@page "/language-detect"
+@inject LanguageDetectionService LanguageDetectionService
+
+<PageTitle>Kielen tunnistin</PageTitle>
+
+<h3>Kielen tunnistin</h3>
+
+<textarea @bind="InputText" rows="5" cols="50" placeholder="Kirjoita teksti..."></textarea>
+<br />
+<button @onclick="Detect">Tunnista kieli</button>
+
+@if (!string.IsNullOrEmpty(Result))
+{
+    <p><strong>Tunnistettu kieli:</strong> @Result</p>
+}
+
+@code {
+    private string InputText = "";
+    private string Result = "";
+
+    private async Task Detect()
+    {
+        Result = await LanguageDetectionService.DetectLanguageAsync(InputText) ?? "Ei tunnistettu";
+    }
+}

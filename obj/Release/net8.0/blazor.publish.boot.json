@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Texta",
   "resources": {
-    "hash": "sha256-DGhRzK3IcY5nYcRnrRYw4VrLO1U8JhDGmTXHaW25tjY=",
+    "hash": "sha256-FmcrbiD8rjbe3rioAnDRxAkjEJZ5L+peyyldmRURTkQ=",
     "jsModuleNative": {
       "dotnet.native.8.0.20.yp1ylrhqdv.js": "sha256-tZa9ZsLAMJyOpmnN51tvFieJc0orxZ5BeOO85ywfsX4="
     },
@@ -48,7 +48,7 @@
       "System.Text.Encodings.Web.wasm": "sha256-mvAZWl5zeWjLWz+V0R1IXnaoDv9QcEg+jUbseHDEtIc=",
       "System.Text.Json.wasm": "sha256-S5ekDenCSStZDBmySHV5zwU1CD8HOO9cc6gw2LoR+R4=",
       "System.Text.RegularExpressions.wasm": "sha256-+l4THzmjS0Kepirh9c73X6+miC4zvFeUaH9GCKZM2uk=",
-      "Texta.wasm": "sha256-IkPcFsJvYkbWfPupwLL0ynhHI4jFZ7EAk81gcuvN9hU="
+      "Texta.wasm": "sha256-oJVlvnORGynZcPCa+IkyYXBg23lxIWlD1oqUh9RSGts="
     }
   },
   "cacheBootResources": true,

@@ -195,3 +195,22 @@ main[b-m7ck0hd6bn] {
     border-radius: 8px;
     border: 1px solid #ccc;
 }
+/* /Pages/LanguageDetect.razor.rz.scp.css */
+.input-container[b-5lphcxkn5b] {
+    margin-top: 20px;
+}
+
+.footer[b-5lphcxkn5b] {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.footer a[b-5lphcxkn5b] {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.footer a:hover[b-5lphcxkn5b] {
+    text-decoration: none;
+}
